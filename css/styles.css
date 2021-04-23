@@ -1,0 +1,184 @@
+body {
+  padding-top: 5rem;
+  color: #343a40 !important;
+  font-family: "Playfair Display", serif !important;
+}
+
+.productpage,
+.aboutpage,
+.contactpage {
+  padding: 3rem 1.5rem;
+}
+
+.container {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+mark {
+  background-color: yellow;
+}
+
+.carousel-inner {
+  width: 100%;
+  max-height: 10px !important;
+}
+
+.nav-link {
+  color: #343a40 !important;
+}
+
+.nav-link:hover {
+  color: #ffc516 !important;
+}
+
+.nav-item.active .nav-link {
+  color: #ffc516 !important;
+}
+
+/* *******THIS SECTION BELOW WAS OUT OF MY CALIBUR AND I TOOK A TUTORIAL ON HOW IT WAS DONE******* */
+/* I CHANGED SOME THINGS AROUND MOSTLY TO UNDERSTAND WHAT WAS HAPPENING, CHANGE SOMETHING RELOAD ETC */
+.product-content {
+  position: relative;
+  transition: 0.3s;
+}
+
+.product-content .text-content,
+.product-content:after {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+}
+
+.product-content:after {
+  content: "";
+  display: block;
+  background: #28282b;
+  top: 10px;
+  bottom: 10px;
+  opacity: 0;
+  transform: rotate3d(-45, 0, 0, 100deg);
+  transition: 0.4s;
+}
+
+.product-content:hover:after {
+  opacity: 0.8;
+  transform: rotate3d(0, 0, 0, 0deg);
+}
+
+.product-content img {
+  width: 100%;
+  height: auto;
+}
+
+.text-content {
+  top: 45%;
+  opacity: 0;
+  z-index: 1;
+  transform: translate(10%, 30%);
+  transition: 0.2s;
+  text-align: center;
+  color: #fff;
+}
+.product-content:hover .text-content {
+  opacity: 1;
+  transform: translate(0, -50%);
+  transition-delay: 0.3s;
+}
+/* *******THIS SECTION ABOVE WAS OUT OF MY CALIBUR AND I TOOK A TUTORIAL ON HOW IT WAS DONE******* */
+.aboutpage {
+  font-size: 1rem;
+}
+
+.product-content,
+.product-content:after,
+.aboutus-content.aboutus-content,
+.aboutus-content img {
+  box-shadow: 0.4rem 0.4rem 1.06em rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+  box-shadow: 0.625rem 1.25rem 1.25rem rgba(0, 0, 0, 0.1);
+}
+
+.btn-link {
+  text-decoration: none !important;
+}
+
+.btn-link:focus {
+  color: #ffc516 !important;
+}
+
+.modal-desc {
+  font-size: 18px;
+}
+
+.modal-content img {
+  width: 100%;
+}
+
+.btn-submit,
+.modal-button,
+.btn-add-to-cart,
+.modal-btn-exit {
+  background: #fff;
+  border: 1px solid #343a40;
+  border-radius: 3px;
+  color: #343a40;
+  font-size: 16px;
+  line-height: inherit;
+  margin: 30px 0;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  transition: all 0.25s ease 0s;
+}
+
+.modal-button:hover,
+.modal-button:focus,
+.btn-submit:hover,
+.btn-submit:focus,
+.btn-add-to-cart:hover,
+.btn-add-to-cart:focus {
+  border-color: #ffc516;
+  color: #ffc516;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.modal-btn-exit:active,
+.modal-button:active,
+.btn-submit:active,
+.btn-add-to-cart:active,
+.gallery:active {
+  box-shadow: none;
+}
+
+.modal-btn-exit:hover,
+.modal-btn-exit:focus {
+  border-color: #dc3545;
+  color: #dc3545;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+.fb-content:hover,
+.btn-social-icon:hover {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.modal-main {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn-outline-facebook:hover {
+  border: 1px solid #3b579d;
+  color: #3b579d;
+}
+
+.btn-outline-twitter:hover {
+  border: 1px solid #2caae1;
+  color: #2caae1;
+}
+
+.btn-outline-instagram:hover {
+  border: 1px solid #dc4a38;
+  color: #dc4a38;
+}
